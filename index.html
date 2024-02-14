@@ -4,9 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stimulus Webpack Example</title>
+    <style>
+      body {
+        background-color: honeydew;
+      }
+      h1 {
+        color: green;
+        text-align: center;
+        text-decoration: underline;
+      }
+      .bg-red {
+        background-color: rgb(0, 208, 255);
+      }
+    </style>
   </head>
   <body>
-    <div data-controller="toggle">Hello</div>
+    <!-- Question 1. -->
+    <!-- update the introH1 h1 tag element to anything after 5 sec and change the color -->
+    <!-- and update the font size of  introP1 p1 tag element as well-->
+    <div data-controller="intro">
+      <h1 data-intro-target="introH1">Introduction to DOM using Stimulus JS</h1>
+      <p data-intro-target="introP1">
+        The Document Object Model (DOM) is the data representation of the
+        objects that comprise the structure and content of a document on the
+        web. In this guide, we'll briefly introduce the DOM. We'll look at how
+        the DOM represents an HTML or XML document in memory and how you use
+        APIs to create web content and applications.
+      </p>
+    </div>
+    <!-- Question 2. -->
+    <!-- take a prompt to take name from that and add it and greet it as hello name -->
+    <div data-controller="toggle">
+      <div data-toggle-target="toggleable"></div>
+    </div>
+    <!-- Question 3. -->
+    <!-- according to time greet the user -->
+    <div data-controller="greet">
+      <h2 data-greet-target="helloGreet"></h2>
+    </div>
     <script src="dist/bundle.js"></script>
   </body>
 </html>
