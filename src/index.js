@@ -4,9 +4,11 @@ import { Application } from "stimulus";
 import ToggleController from "./controllers/toggle_controller";
 import IntroController from "./controllers/intro_controller";
 import GreetController from "./controllers/greet_controller";
+import clipboard_controller from "./controllers/clipboard_controller";
 
 const application = Application.start();
 // registerControllersFrom(application, __dirname);
 application.register("toggle", ToggleController);
 application.register("intro", IntroController);
 application.register("greet", GreetController);
+application.register("clipboard", clipboard_controller);

@@ -16,6 +16,13 @@
       .bg-red {
         background-color: rgb(0, 208, 255);
       }
+      .clipboard-button {
+        display: none;
+      }
+
+      .clipboard--supported .clipboard-button {
+        display: initial;
+      }
     </style>
   </head>
   <body>
@@ -41,6 +48,19 @@
     <!-- according to time greet the user -->
     <div data-controller="greet">
       <h2 data-greet-target="helloGreet"></h2>
+    </div>
+
+    <!-- Question 4. -->
+    <!-- copy to clipboard  -->
+    <div
+      data-controller="clipboard"
+      data-clipboard-supported-class="clipboard--supported"
+    >
+      PIN:
+      <input data-clipboard-target="source" type="text" value="1234" readonly />
+      <button data-action="clipboard#copy" class="clipboard-button">
+        Copy to Clipboard
+      </button>
     </div>
     <script src="dist/bundle.js"></script>
   </body>
