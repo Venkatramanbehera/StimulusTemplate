@@ -29,6 +29,10 @@
         max-height: 0;
         overflow: hidden;
       }
+      .closable-lists .crossed {
+        text-decoration: line-through;
+        background-color: rgb(196, 235, 225);
+      }
     </style>
   </head>
   <body>
@@ -64,7 +68,10 @@
     >
       PIN:
       <input data-clipboard-target="source" type="text" value="1234" readonly />
-      <button data-action="clipboard#copy" class="clipboard-button">
+      <button
+        data-action="clipboard#copy"
+        class="clipboard-button btn btn-primary"
+      >
         Copy to Clipboard
       </button>
     </div>
@@ -74,13 +81,84 @@
       <div data-controller="accordian">
         <button data-action="accordian#toggle">Show</button>
         <div class="details" data-accordian-target="details">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, minus! Incidunt id at sunt? Perspiciatis quam omnis quae sunt ab unde asperiores! Deserunt, totam illo ducimus officia ab reiciendis amet dignissimos fugit animi ipsam quisquam culpa voluptatem voluptates aspernatur corrupti tempore itaque quidem! Eligendi cum quos ex ab nostrum at provident facilis perferendis alias quo voluptatum quidem aspernatur, laborum numquam reprehenderit. Eveniet autem saepe suscipit voluptas a atque cum dolorem illo laudantium molestiae aut ab maxime porro praesentium optio labore necessitatibus ullam, neque non dolores quo accusamus? Vero mollitia minima, corporis magnam voluptatum officiis quam. Non, at eaque consequatur officia soluta molestiae? Neque dicta id praesentium quae consequuntur similique. Asperiores fuga animi quod velit veniam qui fugit ipsum accusantium itaque dolore voluptatibus beatae, architecto sunt labore aperiam voluptatum deserunt nam voluptates numquam, ad excepturi, iusto possimus sit dolores? Nesciunt dolorem eaque beatae sequi magnam eligendi, necessitatibus sunt tempora non nam voluptate illum ex rerum eos! Ducimus, omnis dolorum ipsum suscipit aperiam dolore quos. Quos suscipit ratione inventore qui pariatur illum assumenda, saepe praesentium, sint dolorem, velit architecto dolore quidem error magnam adipisci ipsum dignissimos? Nobis est nemo aut enim rerum ipsa laudantium expedita. Magni iste cupiditate cum odio, temporibus quidem.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
+          minus! Incidunt id at sunt? Perspiciatis quam omnis quae sunt ab unde
+          asperiores! Deserunt, totam illo ducimus officia ab reiciendis amet
+          dignissimos fugit animi ipsam quisquam culpa voluptatem voluptates
+          aspernatur corrupti tempore itaque quidem! Eligendi cum quos ex ab
+          nostrum at provident facilis perferendis alias quo voluptatum quidem
+          aspernatur, laborum numquam reprehenderit. Eveniet autem saepe
+          suscipit voluptas a atque cum dolorem illo laudantium molestiae aut ab
+          maxime porro praesentium optio labore necessitatibus ullam, neque non
+          dolores quo accusamus? Vero mollitia minima, corporis magnam
+          voluptatum officiis quam. Non, at eaque consequatur officia soluta
+          molestiae? Neque dicta id praesentium quae consequuntur similique.
+          Asperiores fuga animi quod velit veniam qui fugit ipsum accusantium
+          itaque dolore voluptatibus beatae, architecto sunt labore aperiam
+          voluptatum deserunt nam voluptates numquam, ad excepturi, iusto
+          possimus sit dolores? Nesciunt dolorem eaque beatae sequi magnam
+          eligendi, necessitatibus sunt tempora non nam voluptate illum ex rerum
+          eos! Ducimus, omnis dolorum ipsum suscipit aperiam dolore quos. Quos
+          suscipit ratione inventore qui pariatur illum assumenda, saepe
+          praesentium, sint dolorem, velit architecto dolore quidem error magnam
+          adipisci ipsum dignissimos? Nobis est nemo aut enim rerum ipsa
+          laudantium expedita. Magni iste cupiditate cum odio, temporibus
+          quidem.
         </div>
       </div>
       <div data-controller="accordian">
         <button data-action="accordian#toggle">Show</button>
         <div class="details" data-accordian-target="details">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, minus! Incidunt id at sunt? Perspiciatis quam omnis quae sunt ab unde asperiores! Deserunt, totam illo ducimus officia ab reiciendis amet dignissimos fugit animi ipsam quisquam culpa voluptatem voluptates aspernatur corrupti tempore itaque quidem! Eligendi cum quos ex ab nostrum at provident facilis perferendis alias quo voluptatum quidem aspernatur, laborum numquam reprehenderit. Eveniet autem saepe suscipit voluptas a atque cum dolorem illo laudantium molestiae aut ab maxime porro praesentium optio labore necessitatibus ullam, neque non dolores quo accusamus? Vero mollitia minima, corporis magnam voluptatum officiis quam. Non, at eaque consequatur officia soluta molestiae? Neque dicta id praesentium quae consequuntur similique. Asperiores fuga animi quod velit veniam qui fugit ipsum accusantium itaque dolore voluptatibus beatae, architecto sunt labore aperiam voluptatum deserunt nam voluptates numquam, ad excepturi, iusto possimus sit dolores? Nesciunt dolorem eaque beatae sequi magnam eligendi, necessitatibus sunt tempora non nam voluptate illum ex rerum eos! Ducimus, omnis dolorum ipsum suscipit aperiam dolore quos. Quos suscipit ratione inventore qui pariatur illum assumenda, saepe praesentium, sint dolorem, velit architecto dolore quidem error magnam adipisci ipsum dignissimos? Nobis est nemo aut enim rerum ipsa laudantium expedita. Magni iste cupiditate cum odio, temporibus quidem.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
+          minus! Incidunt id at sunt? Perspiciatis quam omnis quae sunt ab unde
+          asperiores! Deserunt, totam illo ducimus officia ab reiciendis amet
+          dignissimos fugit animi ipsam quisquam culpa voluptatem voluptates
+          aspernatur corrupti tempore itaque quidem! Eligendi cum quos ex ab
+          nostrum at provident facilis perferendis alias quo voluptatum quidem
+          aspernatur, laborum numquam reprehenderit. Eveniet autem saepe
+          suscipit voluptas a atque cum dolorem illo laudantium molestiae aut ab
+          maxime porro praesentium optio labore necessitatibus ullam, neque non
+          dolores quo accusamus? Vero mollitia minima, corporis magnam
+          voluptatum officiis quam. Non, at eaque consequatur officia soluta
+          molestiae? Neque dicta id praesentium quae consequuntur similique.
+          Asperiores fuga animi quod velit veniam qui fugit ipsum accusantium
+          itaque dolore voluptatibus beatae, architecto sunt labore aperiam
+          voluptatum deserunt nam voluptates numquam, ad excepturi, iusto
+          possimus sit dolores? Nesciunt dolorem eaque beatae sequi magnam
+          eligendi, necessitatibus sunt tempora non nam voluptate illum ex rerum
+          eos! Ducimus, omnis dolorum ipsum suscipit aperiam dolore quos. Quos
+          suscipit ratione inventore qui pariatur illum assumenda, saepe
+          praesentium, sint dolorem, velit architecto dolore quidem error magnam
+          adipisci ipsum dignissimos? Nobis est nemo aut enim rerum ipsa
+          laudantium expedita. Magni iste cupiditate cum odio, temporibus
+          quidem.
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="border p-3">
+        <h3>Todo list</h3>
+        <div data-controller="todo">
+          <form class="row pl-3my-3" data-action="todo#add">
+            <input
+              data-todo-target="input"
+              type="text"
+              class="form-control col-4 mr-2"
+            />
+            <button class="btn btn-primary col-2">Add Todo</button>
+          </form>
+          <ul class="closable-lists" data-todo-target="container">
+            <li data-action="click->todo#done">
+              Do thelaundry
+              <button
+                class="btn btn-secondary"
+                data-action="click->todo#remove"
+              >
+                delete
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
