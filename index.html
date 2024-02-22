@@ -33,6 +33,16 @@
         text-decoration: line-through;
         background-color: rgb(196, 235, 225);
       }
+      .outer-bar {
+        width: 100%;
+        background-color: red;
+        height: 30px;
+      }
+      .inner-bar {
+        width: 1%;
+        background-color: green;
+        height: 30px;
+      }
     </style>
   </head>
   <body>
@@ -179,6 +189,21 @@
           <input type="checkbox" name="onion" id="onion" /><label>Onion</label
           ><br />
         </div>
+      </div>
+    </div>
+
+    <div>
+      <h3>Progress bar</h3>
+      <div data-controller="progress-bar" data-progress-bar-progress-value="1">
+        <div class="outer-bar">
+          <div
+            data-progress-bar-target="innerBar"
+            class="inner-bar sucess"
+          ></div>
+        </div>
+        <p class="display" data-progress-bar-target="display"></p>
+        <button data-action="progress-bar#start">start</button>
+        <button data-action="progress-bar#reset">reset</button>
       </div>
     </div>
     <script src="dist/bundle.js"></script>
