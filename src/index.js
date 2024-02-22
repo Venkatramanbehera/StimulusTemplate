@@ -7,6 +7,7 @@ import GreetController from "./controllers/greet_controller";
 import clipboard_controller from "./controllers/clipboard_controller";
 import accordian_controller from "./controllers/accordian_controller";
 import todo_controller from "./controllers/todo_controller";
+import checkbox_controller from "./controllers/checkbox_controller";
 
 const application = Application.start();
 // registerControllersFrom(application, __dirname);
@@ -16,3 +17,4 @@ application.register("greet", GreetController);
 application.register("clipboard", clipboard_controller);
 application.register("accordian", accordian_controller);
 application.register("todo", todo_controller);
+application.register("checkbox", checkbox_controller);
